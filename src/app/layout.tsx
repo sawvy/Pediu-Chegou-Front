@@ -1,9 +1,9 @@
-import './globals.css'
+import { cn } from '@/utils/tw-merge'
+import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { cn } from './utils/tw-merge'
-import Header from './components/layout/header'
-import Footer from './components/layout/footer'
+import Header from '@/components/layout/header'
+import Footer from '@/components/layout/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
