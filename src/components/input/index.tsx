@@ -23,7 +23,7 @@ const Input = ({
     <div className={`flex flex-col ${className}`}>
       <label
         htmlFor={htmlFor}
-        className="text-primary mb-1 text-labelInput text-sm font-medium"
+        className="text-primary mb-1 text-label-input text-sm font-medium"
       >
         {label}
       </label>

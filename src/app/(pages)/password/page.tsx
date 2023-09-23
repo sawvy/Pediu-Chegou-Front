@@ -9,7 +9,7 @@ export default function PasswordScreen() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(true)
 
   return (
-    <div className="container mx-auto px-3 bg-backgroundLogin">
+    <div className="container mx-auto px-3 bg-background-login">
       <div>
         <Image
           className="mt-6 ml-8"
@@ -28,7 +28,7 @@ export default function PasswordScreen() {
       </div>
 
       <div className="w-auto flex items-end mt-10">
-        <h3 className="text-4xl w-64 text-textLogin font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-300">
+        <h3 className="text-4xl w-64 text-text-login font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-300">
           Sua Loja Exclusiva
           <div className="bg-fill h-1 w-[10.5rem] mt-1"></div>
         </h3>
