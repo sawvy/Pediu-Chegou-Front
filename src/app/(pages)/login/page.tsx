@@ -1,7 +1,8 @@
-import Button from "@/components/button";
-import Input from "@/components/input";
-import Image from "next/image";
-import { ChevronRight } from "lucide-react";
+import Button from '@/components/button'
+import Input from '@/components/input'
+import Image from 'next/image'
+import { ChevronRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Login() {
   return (
@@ -30,7 +31,7 @@ export default function Login() {
       </div>
       <div className="w-auto flex justify-center items-center mt-6">
         <p className="text-gray-500 ">
-          O seu cardápio digital totalmente{" "}
+          O seu cardápio digital totalmente{' '}
           <strong className="text-gray-600 font-bold">GRATUITO</strong>
         </p>
       </div>
@@ -40,9 +41,9 @@ export default function Login() {
           label="Digite seu e-mail"
           placeholder="exemploseuemail@aqui.com"
           htmlFor="email"
-          className="mt-10 w-full]"
-          value={""}
-          onChange={(e) => e}
+          className="mt-10 w-full"
+          value={''}
+          onChange={(e) => console.log(e)}
         />
       </div>
 
@@ -66,8 +67,13 @@ export default function Login() {
           <circle cx="106" cy="8" r="8" fill="#FFD7D5" />
         </svg>
 
-        <Button disabled={false} icon={<ChevronRight size={32} />} />
+        <Link
+          className="p-4 bg-red-500 rounded-full text-white hover:bg-red-600"
+          href={'/password'}
+        >
+          {<ChevronRight size={32} />}
+        </Link>
       </div>
     </div>
-  );
+  )
 }
