@@ -1,12 +1,12 @@
 'use client'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
-import Button from '@/components/button'
 import Input from '@/components/input'
+import Link from 'next/link'
 
 export default function PasswordScreen() {
   return (
-    <div className="container mx-auto px-3 bg-backgroundLogin">
+    <div className="container mx-auto px-3 bg-background-login">
       <div>
         <Image
           className="mt-6 ml-8"
@@ -25,7 +25,7 @@ export default function PasswordScreen() {
       </div>
 
       <div className="w-auto flex items-end mt-10">
-        <h3 className="text-4xl w-72 text-textLogin font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-300">
+        <h3 className="text-4xl w-72 text-text-login font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-300">
           A um passo da Exclusividade
           <div className="bg-fill h-1 w-[10.5rem] mt-1"></div>
         </h3>
@@ -82,7 +82,12 @@ export default function PasswordScreen() {
           <circle cx="36.0001" cy="7.99957" r="8" fill="#FFD7D5" />
         </svg>
 
-        <Button disabled={false} icon={<ChevronRight size={32} />} />
+        <Link
+          className="p-4 bg-red-500 rounded-full text-white hover:bg-red-600"
+          href={'/store'}
+        >
+          {<ChevronRight size={32} />}
+        </Link>
       </div>
     </div>
   )

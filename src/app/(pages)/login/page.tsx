@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Login() {
   return (
-    <div className="bg-backgroundLogin">
+    <div className="bg-background-login">
       <div>
         <Image
           className="mt-6 ml-8"
@@ -23,7 +23,7 @@ export default function Login() {
         />
       </div>
       <div className="w-auto flex justify-center items-center mt-16">
-        <h3 className=" w-64 text-textLogin text-4xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-300">
+        <h3 className=" w-64 text-text-login text-4xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-300">
           Pediu Chegou
           <div className="bg-fill h-1 w-36 mt-1 ml-28"></div>
         </h3>
