@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import { EyeIcon, EyeOff, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
-import Button from '@/components/button'
 import Input from '@/components/input'
 import Link from 'next/link'
 

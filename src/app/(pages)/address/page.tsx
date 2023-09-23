@@ -1,13 +1,10 @@
 'use client'
-import { useState } from 'react'
-import { EyeIcon, EyeOff, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import Button from '@/components/button'
 import Input from '@/components/input'
 
 export default function PasswordScreen() {
-  const [isPasswordVisible, setIsPasswordVisible] = useState(true)
-
   return (
     <div className="container mx-auto px-3 bg-backgroundLogin">
       <div>

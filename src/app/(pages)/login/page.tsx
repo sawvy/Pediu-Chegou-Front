@@ -1,4 +1,3 @@
-import Button from '@/components/button'
 import Input from '@/components/input'
 import Image from 'next/image'
 import { ChevronRight } from 'lucide-react'
